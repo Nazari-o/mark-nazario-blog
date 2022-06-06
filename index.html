@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <section class="navbar__section container">
+    <nav class="navbar">
+      <div class="navbar-left">
+        <img src="images/logo.png" alt="LR-Logo" class="logo">
+        <div class="search-wrapper">
+          <input class="search-input" type="text" placeholder="Search">
+          <img class="search-btn" src="images/search-icon.svg" alt="Search Icon">
+        </div>
+      </div>
+
+      <div class="navbar-right">
+        <ul class="link-box">
+          <li><a href="#">Home</a></li>
+          <li>
+            <a onclick="categoryHide()" class="category-drop" href="#">Categories</a>
+            <div class="category__drop-wrapper">
+              <ul>
+                <li>Sport</li>
+                <li>Lifestyle</li>
+                <li>Most viewed</li>
+                <li>Pots & plants</li>
+                <li>Food & beverages</li>
+                <li>Books</li>
+                <li>Fashion and Clothing</li>
+                <li>Self improvement</li>
+                <li>Entertainment</li>
+                <li>Grocery, Food and Produce</li>
+              </ul>
+            </div>
+          </li>
+          <button class="subscribe-btn">Subscribe now</button>
+        </ul>
+        <div class="burger-menu">
+          <img src="images/menu.svg" alt="Menu" class="menu-icon">
+        </div>
+      </div>
+    </nav>
+
+    <div class="mobile__menu">
+      <div class="mobile__menu-wrapper">
+        <img src="images/close-icon.svg" alt="" class="closeBtn">
+
+        <div class="mobile__menu-links">
+          <ul>
+            <hr class="mobile__menu-line">
+            <li><a href="#">Home</a></li>
+            <li>
+              <a class="category-btn" href="#">Categories</a>
+              <div class="categories__list">
+                <div class="categories__list-top">
+                  <a class="category-btn" href="#">Categories</a>
+                  <img src="images/come-back-arrow.svg" alt="Back" class="backBtn">
+                </div>
+
+                <ul>
+                  <hr class="mobile__menu-line">
+                  <li>Sport</li>
+                  <li>Lifestyle</li>
+                  <li>Most viewed</li>
+                  <li>Pots & plants</li>
+                  <li>Food & beverages</li>
+                  <li>Books</li>
+                  <li>Fashion and Clothing</li>
+                  <li>Self improvement</li>
+                  <li>Entertainment</li>
+                  <li>Grocery, Food and Produce</li>
+                </ul>
+              </div>
+            </li>
+            <input class="search-input" type="text" placeholder="Search">
+          </ul>
+        </div>
+
+        <button class="subscribe-btn">Subscribe now</button>
+      </div>
+    </div>
+
+    <div class="categories__options container">
+      <ul class="categories-wrapper">
+        <li class="active-category"><a href="#">Most viewed</a></li>
+        <li><a href="#">Sport</a></li>
+        <li><a href="#">Lifestyle</a></li>
+        <li><a href="#">Tech</a></li>
+        <li><a href="#">Self improvement</a></li>
+      </ul>
+      <hr class="category-line">
+    </div>
+  </section>
+
+  <div class="category container">
+    <h1 class="category-heading">Most viewed</h1>
+  </div>
+  <section class="mostviewed__section container">
+    <div class="mostviewed__section-left">
+      <div class="athor-info">
+        <div class="athor">athor</div>
+        <span>-</span>
+        <div class="time">6 hours ago</div>
+      </div>
+      <h3 class="article-name">Article headline of the new blog</h3>
+      <p class="article-paragraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer malesuada. Nullam at arcu a est sollicitudin euismod. Etiam sapien elit, consequat eget, tristique non, venenatis quis, ante. Aenean vel massa quis mauris vehicula lacinia.</p>
+
+      <button class="readmore-btn">Read more <img src="images/arrow-right.svg" alt=">"></button>
+    </div>
+
+    <div class="mostviewed__section-right">
+      <img src="images/article-img.png" alt="Img" class="mostviewed-img">
+    </div>
+  </section>
+
+
+  <section class="articles__section container">
+    <div class="article-item">
+      <img src="images/article-img2.png" alt="" class="article-img">
+      <div class="athor-info">
+        <div class="athor">athor</div>
+        <span>-</span>
+        <div class="time">6 hours ago</div>
+      </div>
+      <h3 class="article-name">Interesting name of the post / article</h3>
+    </div>
+    <div class="article-item">
+      <img src="images/article-img3.png" alt="" class="article-img">
+      <div class="athor-info">
+        <div class="athor">athor</div>
+        <span>-</span>
+        <div class="time">6 hours ago</div>
+      </div>
+      <h3 class="article-name">Interesting name of the post / article</h3>
+    </div>
+    <div class="article-item">
+      <img src="images/article-img2.png" alt="" class="article-img">
+      <div class="athor-info">
+        <div class="athor">athor</div>
+        <span>-</span>
+        <div class="time">6 hours ago</div>
+      </div>
+      <h3 class="article-name">Interesting name of the post / article</h3>
+    </div>
+
+    <div class="view-more">View More</div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
